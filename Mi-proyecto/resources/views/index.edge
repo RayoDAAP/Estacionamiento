@@ -1,0 +1,12 @@
+@layout()
+
+  <h2 class="text-2xl font-semibold mb-6">Espacios de Estacionamiento</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    @each(space in spaces)
+      <div class="bg-white shadow rounded-lg p-4">
+        <h3 class="text-lg font-semibold mb-2">Espacio {{ i }}</h3>
+        <p class="text-green-600">Estado: Disponible</p>
+      </div>
+    @end
+  </div>
+@end

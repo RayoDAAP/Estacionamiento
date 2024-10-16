@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> {{ pageTitle || 'placeHolder' }} </title>
+
+        @vite(['resources/css/app.css', 'resources/js/app.ts'])
+        
+    </head>
+    asdawdasdawdawds
+    <body class="bg-gray-100">
+
+        @include('partials/header')
+
+        <div class="flex">
+            @include('partials/sidebar')
+            
+            <main class="flex-1 ml-64 p-6 pt-24">
+                {{{ await $slots.main() }}}
+            </main>
+
+        </div>
+</body>
+</html>
